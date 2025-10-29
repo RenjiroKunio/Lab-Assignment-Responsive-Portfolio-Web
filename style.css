@@ -1,0 +1,270 @@
+    /* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Georgia", serif;
+    margin: 0;
+    color: #111;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 60px 100px;
+    gap: 60px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.hero p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #444;
+}
+
+section {
+    padding: 80px 100px;
+    border-bottom: 1px solid #eee;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.my-art {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.skills-exp {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.skills, .experience {
+    width: 45%;
+    min-width: 280px;;
+}
+
+.skills ul, .experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    align-content: center;
+}
+
+.skills ul li, .experience ul li {
+    margin-bottom: 5px;
+}
+
+.background {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+    .background img {
+    width: 100%;
+    object-fit: cover;
+    }
+
+.selected-works {
+    margin: 80px auto;
+    text-align: center;
+}
+
+.works-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.work-item {
+    width: 300px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+
+.work-item p {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover {
+    z-index: 10;
+}
+
+.work-caption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    color: #222;
+}
+
+.exhibitions {
+    text-align: center;
+    padding: 80px 100px;
+}
+
+.exhibitions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.exhibit-item {
+    width: 300px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+
+footer {
+    padding: 80px 100px;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    text-align: left;
+}
+
+.contact p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.bottom {
+    text-align: right;
+    font-size: 0.7rem;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+/* Images in the site */
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.my-art img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+.my-art img {
+    width: 50%;
+    height: auto;
+}
+
+.background img {
+    width: 70%;
+    height: auto;
+}
+
+.work-item img {
+    width: 100%;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2;
+}
+
+.work-item:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.exhibit-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+    .hero, .my-art, .background {
+    grid-template-columns: 1fr;
+    padding: 60px 30px;
+}
+
+section {
+    padding: 60px 30px;
+}
+
+.skills-exp {
+    flex-direction: column;
+}
+
+.skills, .experience {
+    width: 100%;
+}
+}
