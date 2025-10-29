@@ -42,3 +42,8 @@ The site is optimized for:
 - I used ChatGPT to help me structure the HTML layout and fix a CSS bug.
 - I designed the color scheme and layout myself using Figma or Canva.
 - I wrote the project descriptions and contact section manually.
+
+## 📸 Screenshots
+
+![Website Design created with Canva](https://github.com/RenjiroKunio/Lab-Assignment-Responsive-Portfolio-Web/blob/master/Images/Traditional%20Art%20Portfolio%20Website%20in%20White%20Black%20Light%20Classic%20Minimal%20Style.png "Website Design created with Canva")
+![Screenshot of the website on a IPhone 16 Plus](https://github.com/RenjiroKunio/Lab-Assignment-Responsive-Portfolio-Web/blob/master/Images/WhatsApp%20Image%202025-10-29%20at%2016.32.25.jpeg "Screenshot of the website on a IPhone 16 Plus")
